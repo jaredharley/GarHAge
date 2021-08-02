@@ -128,6 +128,9 @@ void setup_wifi() {
   Serial.println();
   Serial.print("Connecting to ");
   Serial.print(ssid);
+  Serial.println();
+  Serial.print("MAC: ");
+  Serial.print(WiFi.macAddress());
 
   WiFi.mode(WIFI_STA);
   WiFi.begin(ssid, password);
